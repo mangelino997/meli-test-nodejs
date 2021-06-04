@@ -1,5 +1,5 @@
 class Item {
-    constructor({ id, title, thumbnail, condition, shipping, currency_id, price, decimals = 2 }, sold_quantity, description ) {
+    constructor({ id, title, thumbnail, condition, shipping, currency_id, price, decimals = '00' }, sold_quantity, description ) {
         this.id = id;
         this.title = title;
         this.picture = thumbnail;

@@ -10,14 +10,6 @@ const config = {
         searchPath: process.env.PATH_SITES,
         itemsPath: process.env.PATH_ITEMS
     }
-    // jwtConfig: {
-    //     SECRET_TOKEN: 'miclavedetokens' 
-    // },
-    // db:{
-    //     port: process.env.DB_PORT,
-    //     host: process.env.DB_HOST,
-    //     dbName: process.env.DB_NAME,
-    // }
 }
 
 module.exports = config

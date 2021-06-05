@@ -2,14 +2,14 @@ const { getItemsBySearch, getItemById } = require('../services/item.service')
 const { handleError } = require('../utils/handleError')
 
 async function getItems(req, res) {
-    if (!req.query.search) {
+    if (!req.query.q) {
         let message = handleError(400)
         res.status(400).send({ success: false, message: message })
         return
     }
 
     try {
-        const response = await getItemsBySearch(req.query.search)
+        const response = await getItemsBySearch(req.query.q)
         res.status(200).send(response)
     } catch (error) {
         const { response } = error
